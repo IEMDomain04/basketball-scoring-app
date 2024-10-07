@@ -1,3 +1,6 @@
+# Twitter Clone
+This project is a simple Twitter clone, designed exclusively for mobile devices, created to enhance and practice my JavaScript skills.
+
 # Getting Started
 Install the dependencies and run the project
 ```
