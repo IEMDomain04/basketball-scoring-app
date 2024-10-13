@@ -1,22 +1,14 @@
-# Twitter Clone
-This project is a simple Twitter clone, designed exclusively for mobile devices, created to enhance and practice my JavaScript skills.
+# Basketball Scoring App
+This is a simple basketball scoring app built with JavaScript. The app allows users to track and update scores for both the home and guest teams. It also indicates which team won the game once it's over and includes a reset button to start a new game.
 
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# Features:
+Score tracking for both Home and Guest teams.
+Displays the winner when the game ends.
+Reset button to clear the scores and restart the game.
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
-## About Scrimba
+# How to Use:
+Increment the score for each team by clicking the corresponding buttons.
+The app will automatically indicate the winning team when the game is complete.
+Use the reset button to clear the scores and start a new game.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+# Feel free to explore and modify the app to fit your needs!

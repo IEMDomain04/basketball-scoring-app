@@ -1,132 +1,139 @@
-html, body {
+body {
     margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
+    background: #4C1D95;
 }
 
-/* typography and icons */
-
-h1{
-    color: #0F8CDF;
-    margin-bottom: 10px;
-    font-size: 20px;
+h1 {
+    font-size: 100px;
+    color: whitesmoke;
 }
 
-i{
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.fa-solid{
-    color: #999;
-}
-
-.liked{
+h2 {
+    background: black;
     color: red;
+    padding: 50px 30px;
+    font-size: 80px;
 }
 
-.retweeted {
-  color: limegreen;
+button {
+    width: 80px;
+    border-radius: 5px;
+    border: 3px solid whitesmoke;
+    background: #5B21B6;
+    color: whitesmoke;
+    padding: 20px;
 }
 
-/* layout */
-
-main, header{
-    width: 290px;
-    margin: 0 auto;
+.reset-home {
+    width: 150px;
+    margin-top: 30px;
 }
 
-header{
-    padding-bottom: 25px;
+.reset-guest {
+    width: 150px;
+    margin-top: 30px;
 }
 
-.tweet-input-area {
+.score-btn-wrapper {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    justify-content: space-around;
 }
 
-/* textareas + btn */
-
-textarea{
-    border: none;
-    resize: none;
-    padding: 10px;
-    margin: 0 0 20px 0;
-    height: 60px;
-    width: 100%;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-button{
-    background-color: #1DA1F2;
-    border: none;
-    color: white;
-    padding: 10px 19px;
-    border-radius: 20px;
-    width: 100%; 
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-/* tweet */
-
-.tweet{
-    border-top: 1px solid lightgray;
-    padding: 20px 0 0 0;
-    width: 100%;
-    margin: 15px 0;
-}
-
-.tweet-inner{
+.container {
     display: flex;
-    align-items: flex-start;
-    gap: 10px;
+    justify-content: space-evenly;
 }
 
-.tweet-details{
-    display: flex;
-    font-size: 13px;
-    justify-content: space-between;
-    width: 160px;
+.wrapper {
+    text-align: center;
 }
 
-.tweet-detail{
-    display: flex;
-    gap: 4px;
+#gameSet-element {
+    font-size: 30px;
 }
 
-.tweet-reply{
-    border-top: 1px solid lightgray;
-    padding: 20px 0 0 0px;
-    margin: 10px 0 10px 40px;
-    width: 80%;
+#middle-btn {
+    margin-top: 20rem;
+    width: 100px;
 }
 
-.handle{
-    font-size: 12px;
-    font-weight: 500;
-    color: #555;
-    margin-top: 0;
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px; /* Smaller heading on tablet */
+    }
+
+    h2 {
+        font-size: 40px; /* Adjusted for smaller screens */
+        padding: 20px 15px; /* Adjusted padding */
+    }
+
+    button {
+        width: 80px; /* Smaller button for tablet */
+        padding: 12px;
+    }
+    
+    .container {
+        margin-top: 30px;
+    }
+
+    .score-btn-wrapper {
+        display: inline;
+    }
+
+    .reset-home, .reset-guest {
+        width: 120px; /* Reduced button width */
+    }
+
+    #gameSet-element {
+        font-size: 22px; /* Smaller text for tablet */
+    }
+
+    #middle-btn {
+        width: 90px;
+    }
 }
 
-.tweet-text{
-    width: 207px;
-    font-size: 14px;
-    line-height: 20px;
-}
 
-/* images */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px; /* Smaller heading for mobile */
+    }
 
-.profile-pic{
-    border: 1px solid lightgray;
-    border-radius: 50%;
-    width: 48px;
-}
+    h2 {
+        font-size: 30px; /* Adjusted for mobile */
+        padding: 15px 10px; /* Less padding */
+    }
 
-/* utility */
-.hidden{
-    display: none;
+    button {
+        width: 60px; /* Smaller buttons for mobile */
+        padding: 10px; /* Reduced padding */
+    }
+
+    .reset-home, .reset-guest {
+        width: 100px; /* Further reduced button width */
+        margin-top: 10px;
+    }
+
+    .score-btn-wrapper {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Centered on small screens */
+    }
+
+    .container {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+
+    #gameSet-element {
+        font-size: 18px; /* Smaller font for mobile */
+    }
+
+    #middle-btn {
+        margin-top: 3rem; /* Smaller top margin */
+        width: 70px; /* Smaller width for mobile */
+    }
 }

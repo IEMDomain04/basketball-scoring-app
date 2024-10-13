@@ -1,31 +1,47 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<!-- CSS -->
-	<link rel="stylesheet" href="index.css">
-	<!-- Font Awesome CDN -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<header>
-		<h1>Twimba</h1>
-	</header>
-	<main>
-		<div class="tweet-input-area">
-			<img src="images/scrimbalogo.png" class="profile-pic">
-			<textarea placeholder="What's happening?" id="tweet-input"></textarea>
-		</div>
-		<button id="tweet-btn">Tweet</button>
-		<div class="feed" id="feed">
-			<!-- Tweets here!! -->
-		</div>
-	</main>
-	<script src="index.js" type="module"></script>
-</body>
+    <div class="container">
 
+        <div class="wrapper">
+            <h1>Home</h1>
+            <h2 id="home-score">0</h2>
+
+            <div class="score-btn-wrapper">
+                <button class="plus-one" onclick="addOnePointHome()">+1</button>
+                <button class="plus-two" onclick="addTwoPointHome()">+2</button>
+                <button class="plus-three" onclick="addThreePointHome()">+3</button>
+            </div>
+            <button class="reset-home" onclick="resetHomeScore()">Reset</button>
+        </div>
+
+        <div class="wrapper">
+            <button id="middle-btn" onclick="gameSet()">Set</button>
+            <button id="middle-btn" onclick="resetBoth()">Reset</button>
+            <h1 id="gameSet-element"></h1>
+        </div>
+
+        <div class="wrapper">
+            <h1>Guest</h1>
+            <h2 id="guest-score">0</h2>
+
+            <div class="score-btn-wrapper">
+                <button class="plus-one" onclick="addOnePointGuest()">+1</button>
+                <button class="plus-two" onclick="addTwoPointGuest()">+2</button>
+                <button class="plus-three" onclick="addThreePointGuest()">+3</button>
+            </div>
+            <button class="reset-guest" onclick="resetGuestScore()">Reset</button>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
