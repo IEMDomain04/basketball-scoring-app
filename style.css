@@ -58,21 +58,18 @@ button {
     width: 100px;
 }
 
-
-
-
 @media (max-width: 768px) {
     h1 {
-        font-size: 60px; /* Smaller heading on tablet */
+        font-size: 60px; 
     }
 
     h2 {
-        font-size: 40px; /* Adjusted for smaller screens */
-        padding: 20px 15px; /* Adjusted padding */
+        font-size: 40px; 
+        padding: 20px 15px;
     }
 
     button {
-        width: 80px; /* Smaller button for tablet */
+        width: 80px; 
         padding: 12px;
     }
     
@@ -85,11 +82,11 @@ button {
     }
 
     .reset-home, .reset-guest {
-        width: 120px; /* Reduced button width */
+        width: 120px; 
     }
 
     #gameSet-element {
-        font-size: 22px; /* Smaller text for tablet */
+        font-size: 22px; 
     }
 
     #middle-btn {
@@ -100,40 +97,40 @@ button {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 40px; /* Smaller heading for mobile */
+        font-size: 40px; 
     }
 
     h2 {
-        font-size: 30px; /* Adjusted for mobile */
-        padding: 15px 10px; /* Less padding */
+        font-size: 30px; 
+        padding: 15px 10px; 
     }
 
     button {
-        width: 60px; /* Smaller buttons for mobile */
-        padding: 10px; /* Reduced padding */
+        width: 60px; 
+        padding: 10px; 
     }
 
     .reset-home, .reset-guest {
-        width: 100px; /* Further reduced button width */
+        width: 100px; 
         margin-top: 10px;
     }
 
     .score-btn-wrapper {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Centered on small screens */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .container {
-        flex-direction: column; /* Stack vertically */
+        flex-direction: column; 
         align-items: center;
     }
 
     #gameSet-element {
-        font-size: 18px; /* Smaller font for mobile */
+        font-size: 18px; 
     }
 
     #middle-btn {
-        margin-top: 3rem; /* Smaller top margin */
-        width: 70px; /* Smaller width for mobile */
+        margin-top: 3rem; 
+        width: 70px; 
     }
 }
