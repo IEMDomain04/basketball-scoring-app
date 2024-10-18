@@ -1,9 +1,9 @@
 const app = document.getElementById("score-app")
 
 const htmlTemplate = `
-    <div class="container">
+    <main class="container">
 
-        <div class="wrapper">
+        <section class="wrapper">
             <h1>Home</h1>
             <h2 id="home-score">0</h2>
 
@@ -13,15 +13,15 @@ const htmlTemplate = `
                 <button class="plus-three" onclick="addThreePointHome()">+3</button>
             </div>
             <button class="reset-home" onclick="resetHomeScore()">Reset</button>
-        </div>
+        </section>
 
-        <div class="wrapper">
+        <section class="wrapper">
             <button id="middle-btn" onclick="gameSet()">Set</button>
             <button id="middle-btn" onclick="resetBoth()">Reset</button>
             <h1 id="gameSet-element"></h1>
-        </div>
+        </section>
 
-        <div class="wrapper">
+        <section class="wrapper">
             <h1>Guest</h1>
             <h2 id="guest-score">0</h2>
 
@@ -31,8 +31,8 @@ const htmlTemplate = `
                 <button class="plus-three" onclick="addThreePointGuest()">+3</button>
             </div>
             <button class="reset-guest" onclick="resetGuestScore()">Reset</button>
-        </div>
+        </section>
         
-    </div>
+    </main>
 `
 app.innerHTML = htmlTemplate
